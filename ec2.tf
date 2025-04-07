@@ -45,7 +45,7 @@ resource "aws_instance" "my-instance" {
   }
 }
 
-#resource "aws_ec2_instance_state" "my-instance" {
-#  instance_id = aws_instance.my-instance.id
-#  state       = "running" #instance state
-#}
+resource "aws_ec2_instance_state" "my-instance" {
+  instance_id = aws_instance.my-instance.id
+  state       = "running" #instance state
+}
